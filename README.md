@@ -4,6 +4,6 @@ This is a radar graph renderer UIView for Xamarin iOS. Please check the RadarGra
 
 ----------
 
-Feature-Wishlist:
+Feature Backlog
 - add reload capability to RadarGraphSource
 - add value indicators as circles on rays
