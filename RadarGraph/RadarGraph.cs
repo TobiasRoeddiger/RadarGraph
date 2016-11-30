@@ -131,8 +131,6 @@ namespace RadarGraphProject
                 drawingContext.AddPath(path);
                 drawingContext.DrawPath(CGPathDrawingMode.FillStroke);
             }
-
-            
         }
 
         private void DrawLabels()
