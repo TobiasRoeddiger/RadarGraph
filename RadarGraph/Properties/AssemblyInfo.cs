@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 
-[assembly: AssemblyTitle("RadarGraph")]
+[assembly: AssemblyTitle("RadarGraphProject")]
 [assembly: AssemblyDescription("This is a simple radar graph implementation for iOS.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("(c) Tobias Röddiger")]

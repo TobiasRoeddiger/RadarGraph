@@ -1,13 +1,10 @@
-﻿using System;
-using UIKit;
+﻿using UIKit;
 
 namespace RadarGraphProject
 {
-    public abstract class RadarGraphSource
+    public abstract class IRadarGraphSource
     {
         public abstract int GetNumberOfRaysInGraph();
-
-        public abstract int GetNumberOfNetStepsInGraph();
 
         public abstract int GetNumberOfLayersInGraph();
 
@@ -23,7 +20,15 @@ namespace RadarGraphProject
 
         public abstract int GetDatavalueForRayInLayer(int ray, int layer);
 
-        public abstract int GetPaddingOfGraphInBounds();
+        public int GetPaddingOfGraphInBounds()
+        {
+            return 80;
+        }
+
+        public int GetNumberOfNetStepsInGraph()
+        {
+            return 4;
+        }
 
         public int GetLineWidthForLayers()
         {
@@ -35,7 +40,7 @@ namespace RadarGraphProject
             return 20;
         }
 
-        public UIColor GetLablBackgroundColor()
+        public UIColor GetLabelBackgroundColor()
         {
             return UIColor.Clear;
         }

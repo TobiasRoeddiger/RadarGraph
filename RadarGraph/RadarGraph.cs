@@ -7,7 +7,7 @@ namespace RadarGraphProject
 {
     public class RadarGraph : UIView
     {
-        private readonly RadarGraphSource source;
+        private readonly IRadarGraphSource source;
 
         private readonly int numberOfNetSteps;
 
@@ -19,7 +19,7 @@ namespace RadarGraphProject
 
         private readonly int maxGraphWidth;
 
-        public RadarGraph(CGRect rect, RadarGraphSource source) : base(rect)
+        public RadarGraph(CGRect rect, IRadarGraphSource source) : base(rect)
         {
             this.height = (int)rect.Height;
             this.width = (int)rect.Width;
@@ -154,7 +154,7 @@ namespace RadarGraphProject
                 rayLabel.SizeToFit();
                 rayLabel.Center = new CGPoint(x, y);
 
-                rayLabel.BackgroundColor = source.GetLablBackgroundColor();
+                rayLabel.BackgroundColor = source.GetLabelBackgroundColor();
                 rayLabel.TextColor = source.GetColorForNet();
 
                 AddSubview(rayLabel);

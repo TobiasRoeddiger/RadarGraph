@@ -112,9 +112,10 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="RadarGraphSource.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="RadarGraph\RadarGraph.csproj">
+    <ProjectReference Include="..\RadarGraph\RadarGraph.csproj">
       <Project>{E3B50E5C-30F0-4442-9775-4D805FC91925}</Project>
       <Name>RadarGraph</Name>
     </ProjectReference>
